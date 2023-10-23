@@ -8,7 +8,7 @@ export const FeedbackOptions = ({ buttons, onChangeFeedback }) => {
           type='submit'
           key={button.text}
           style={{ color: button.color }}
-          className='w-[70px] rounded-lg px-2 py-1 text-center border-2 hover:scale-110 focus:scale-110 focus:bg-emerald-700'
+          className='w-[70px] rounded-lg border-2 px-2 py-1 text-center hover:scale-110 focus:scale-110 focus:bg-emerald-700'
           onClick={() => {
             onChangeFeedback(button.text);
           }}
