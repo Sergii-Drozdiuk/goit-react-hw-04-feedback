@@ -10,7 +10,11 @@ export const Statistics = ({
   notificationText,
 }) => {
   const color =
-    positiveFeedback >= 50 ? { color: 'rgb(163 230 53)' } : { color: 'rgb(248 113 113)' };
+    positiveFeedback > 50
+      ? { color: 'rgb(163 230 53)' }
+      : positiveFeedback === 50
+      ? { color: 'rgb(250 204 21)' }
+      : { color: 'rgb(248 113 113)' };
   return (
     <>
       <h2 className='mb-2 flex items-center justify-center gap-2 text-2xl'>

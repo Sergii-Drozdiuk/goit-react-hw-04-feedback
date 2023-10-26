@@ -7,11 +7,7 @@ export const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
-  const buttons = [
-    { text: 'good', color: 'rgb(163 230 53)' },
-    { text: 'neutral', color: 'rgb(250 204 21)' },
-    { text: 'bad', color: 'rgb(248 113 113)' },
-  ];
+  const buttons = ['good', 'neutral', 'bad'];
   const title = 'Please leave feedback';
   const notificationText = 'There is no feedback';
 
